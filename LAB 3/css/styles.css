@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+nav {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #f0f0f0; 
+    box-shadow: 0 0 10px 2px #aaa; 
+    padding: 20px 120px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    z-index: 100; 
+}
+
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+nav ul li {
+    display: inline; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: black; 
+}
+
+nav ul li a[href="index.html"] {
+    font-weight: bold; 
+    color: blue; 
+}
+article, section {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 20px;
+}
+.article-element {
+    width: 50%;
+}
+
+article .article-element {
+    float: left; 
+}
+article {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 120px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #b09797;
+    color: black;
+}
+.favorite-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.favorite-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.favorite-section ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.favorite-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.favorite-section a:hover {
+    text-decoration: underline;
+}
+aside {
+        display: flex;
+        justify-content: center;
