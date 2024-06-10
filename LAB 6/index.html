@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularze</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Zadanie 1 -->
+    <form id="myForm">
+        Imię: <input type="text" name="fname"><br>
+        Nazwisko: <input type="text" name="lname"><br>
+        Email: <input type="email" name="email"><br>
+        Hasło: <input type="password" name="password"><br>
+        Powtórz hasło: <input type="password" name="password2"><br>
+        Telefon: <input type="tel" name="phone"><br>
+        Data urodzenia: <input type="date" name="bday"><br>
+        Kraj: <input type="text" name="country"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Zadanie 2 -->
+    <form id="registerForm">
+        Nazwa użytkownika: <input type="text" name="username" minlength="6" maxlength="12"><br>
+        Email: <input type="email" name="email" maxlength="100"><br>
+        Hasło: <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+        Powtórz hasło: <input type="password" name="password2"><br>
+        Numer telefonu: <input type="tel" name="phone" pattern="[0-9]{9}"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Zadanie 3 -->
+    <form id="loginForm">
+        Nazwa użytkownika: <input type="text" name="username"><br>
+        Hasło: <input type="password" name="password"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
